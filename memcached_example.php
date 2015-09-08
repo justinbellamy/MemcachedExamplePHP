@@ -37,5 +37,6 @@ if ($cache->delete("firstKey")){
 }
 
 // Remove all entries
-if ($cache->flush())
+if ($cache->flush()){
     echo("Cleared entire cache.\n");
+}
